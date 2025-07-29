@@ -64,4 +64,5 @@ jobs:
           target: ${{ matrix.TARGET }}
 
       - run: cargo build --target=${{ matrix.TARGET }}
+      - run: echo asdf
       - run: cargo test --target=${{ matrix.TARGET }}
